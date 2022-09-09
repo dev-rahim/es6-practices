@@ -18,4 +18,9 @@ const multiLineArrowFunction = (a, b) => {
     const d = b + 2;
     return c * d;
 }
-console.log(multiLineArrowFunction(7, 8));
+// console.log(multiLineArrowFunction(7, 8));
+
+//Start using Map //
+const numbers = [23, 43, 55, 65, 76, 8, 7, 45, 54, 6, 3, 3, 57, 76, 65,];
+const numbersAddedTow = numbers.map(number => number * 5);
+console.log(numbersAddedTow);
