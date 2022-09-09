@@ -23,4 +23,23 @@ const multiLineArrowFunction = (a, b) => {
 //Start using Map //
 const numbers = [23, 43, 55, 65, 76, 8, 7, 45, 54, 6, 3, 3, 57, 76, 65,];
 const numbersAddedTow = numbers.map(number => number * 5);
-console.log(numbersAddedTow);
+// console.log(numbersAddedTow);
+// Using Filter 
+const Oddnumbers = numbers.filter(n => n % 2 != 0);
+// console.log(Oddnumbers);
+
+// using find in array object 
+const products = [
+    { name: 'shirt', price: 200 },
+    { name: 'Smart Phone', price: 5000 },
+    { name: 'shoe', price: 3000 }
+];
+const findSomething = products.find(product => product.price == 5000);
+// console.log(findSomething);
+
+const arrayNew = []
+numbers.forEach(element => {
+    // element + 1;
+    arrayNew.push(element + 1);
+});
+console.log(arrayNew);
