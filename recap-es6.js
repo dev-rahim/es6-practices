@@ -42,4 +42,32 @@ numbers.forEach(element => {
     // element + 1;
     arrayNew.push(element + 1);
 });
-console.log(arrayNew);
+// console.log(arrayNew);
+// destructuring //
+const boyesDress = {
+    name: 'shirt', price: 200
+}
+const { name, price } = boyesDress;
+// console.log(name, price);
+
+// array destructuring 
+const pricess = [100, 200, 300];
+[one, two, three] = pricess;
+// console.log(three);
+// default paramiter 
+const defaultPeramiter = (a, b, c = 7) => a + b + c;
+// console.log(defaultPeramiter(2, 5));
+
+// nasted object with array and optional chaining
+
+const companyes = {
+    it: {
+        web: { courseName: 'Web Design', price: 8000 },
+        graphics: { courseName: 'Graphics Design', price: 8000 },
+    },
+    shop: {
+        employes: { name: ['Rahim', 'Karim', 'maisha', 'anisha'], },
+    }
+
+}
+console.log(companyes.shop.employes.name);
